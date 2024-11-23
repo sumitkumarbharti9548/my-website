@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <header>
+        <h1>Available Courses</h1>
+    </header>
+    <style>
+        body{
+            background-color: dimgray;
+            -webkit-text-fill-color: white;
+        }
+        section{
+            -webkit-text-fill-color: rgb(24, 21, 21);
+background-color: rgb(132, 118, 118);
+        }
+    </style>
+    <main>
+       <div> <section>
+            <h2>btech</h2>
+            <p>btech.</p>
+            <button ><a href="btech.html"onclick="enrollCourse('btech')">Enroll Now</button>
+        </section>
+    
+        <section>
+            <h2>Science</h2>
+            <p>Description of the Science course.</p>
+            <button> <a href="science.html"onclick="enrollCourse('science')">Enroll Now</button>
+        </section>
+        <section>
+            <h2>History</h2>
+            <p>Description of the History course.</p>
+            <button onclick="enrollCourse('History')">Enroll Now</button>
+        </section></div>
+        <!-- Add more courses as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 My Educational Website</p>
+    </footer>
+
+    <script>
+        function enrollCourse(btech) {
+            alert("You have enrolled in the " +btech + " course.");
+            // You can perform further actions here, such as redirecting to another page or processing the enrollment
+        }
+    </script>
+</body>
+</html>

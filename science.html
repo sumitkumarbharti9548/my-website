@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Subject Enrollment Form</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: darkslategray;
+        }
+        h2{
+            text-align: center;
+            background-color: rgb(104, 109, 75);
+            border: 10px;
+        }
+        form{
+            text-align: center;
+            background-image: -moz-linear-gradient();
+        }
+        
+        
+    </style>
+    <h2>Science Subject Enrollment Form</h2>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label><br>
+        
+     <input type="text" id="name" name="name"><br>
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="subject">Subject:</label><br>
+        <select id="subject" name="subject">
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+            <option value="Mathematics">Mathematics</option>
+            <!-- Add more options as needed -->
+        </select><br>
+        <br>
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+    <style>                 
+    
+    div{
+      text-align: left;
+    }
+    nav {
+      background-color: #1e1e38; /* Materialize primary color */
+    }
+
+    nav .brand-logo {
+      margin-left: 20px;
+      -webkit-text-fill-color: black;
+    }
+    nav ul a {
+      color: white;
+    }
+    .owl-carousel {
+      width: 50%;
+      margin:auto;
+      
+    }
+    .owl-carousel .item img {
+      width: 50%;
+      max-height: 300px; /* Adjust the maximum height as needed */
+      height: auto;
+    }
+   
+    footer{
+      border-image-width: 10px;
+    }
+   body{ 
+    
+    background-color: rgb(105, 107, 143);
+  
+    }
+
+    
+
+    .card {
+      display: inline-block;
+        margin-right: 20px;
+    width: 300px;
+    height: 180px;
+    perspective: 1000px;
+  }
+    .card2 {
+     margin: 0 auto; 
+    
+  width: 300px;
+  height: 180px;
+  perspective: 1000px;
+  display: inline-block;
+        margin-right: 20px;
+}
+
+.card2-front, .card2-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.card2-front {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  text-align: center;
+}
+
+.card2-back {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card2:hover .card2-front {
+  transform: rotateY(-180deg);
+}
+
+.card2:hover .card2-back {
+  transform: rotateY(0deg);
+}
+.card1 {
+  display: inline-block;
+        margin-right: 20px;
+  width: 300px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.card1-front, .card1-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.card1-front {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  text-align: center;
+}
+
+.card1-back {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card1:hover .card1-front {
+  transform: rotateY(-180deg);
+}
+
+.card1:hover .card1-back {
+  transform: rotateY(0deg);
+} .call-button {
+      display: inline-block;
+      background-color: #0590d5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-align: end;
+      bottom:right ;
+
+    }
+.call-button:hover {
+      background-color: #45a049;
+    text-align: end;}
+    body {
+      text-align: center;
+      -webkit-text-fill-color: darkslategrey;
+
+    }
+    .signin-button {
+      display: inline-block;
+      background-color: #0590d5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-align: end;
+      bottom:right ;
+
+    }
+.signin-button:hover {
+      background-color: #45a049;
+    text-align: end;}
+    footer{
+      text-align: end;
+    }
+    
+
+  </style>
+</head>
+<body1>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">menu</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="new.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="courses.html">Services</a></li>
+        <li><a href="#">Content</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Services</a></li> </ul>
+    <br>
+   
+     <footer ><a class="signin-button" href="chose.html">signin</a>
+      <br>
+    <a class="call-button" href="tel:1234567890">Call now for free</a></footer>
+    <div class="owl-carousel">
+      <div ><a href="signin.html"><img src="https://freepngimg.com/thumb/web_design/24949-1-sign-up-button-transparent-image.png" alt="google"width 800px></div>
+        <div ><a href="science.html"><img src="https://pluspng.com/img-png/png-for-science-lesson-thumbnail-692.png" alt="google"width 800px></div>
+        <div ><a href="btech.html"><img src="https://btech-ael.com/wp-content/uploads/2019/05/BTech-Logo-332.png" alt="google"width 400px></div>
+       
+         </div>
+        
+          <div class="card2">
+          <div class="card2-front">
+              <div><a href="new.html"><img src="https://www.freeiconspng.com/thumbs/education-png/education-png-13.png"alt="google"width=" 200px"> 
+             </div>
+          </div>
+          
+          
+          <div class="card2-back">
+            <div><a href="new.html"><img src="https://tse3.mm.bing.net/th?id=OIP.WKNEQKW-mdt1qnkGEQBgPwHaET&pid=Api&P=0&h=180"alt="google"width="300px"></div>
+          </div>
+          </div>
+          
+        <div class="card2">
+            <div class="card2-front">
+                <div><a href="courses.html"><img src="https://tse1.mm.bing.net/th?id=OIP.Jv-POSQbOoqQgX8E-G0iFAHaEd&pid=Api&P=0&h=180"alt="google"width 800px> </div>
+            </div>
+   
+            <div class="card2-back">
+              <div><a href="courses.html"><img src="https://mxcc.edu/wp-content/uploads/2016/01/New-Course-Icon-01.png"alt="google"width ="250px"></div>
+            </div>
+          </div>
+          
+          <div class="card1">
+            <div class="card1-front">
+                <div><a href="new.html"><img src="https://growth-fe.vedantu.com/static/images/react-app/Target-JEE-NEET/target-jee-neet-logo.png"alt="google"width="300px"> 
+               
+                </div>
+            </div>
+        
+            <div class="card1-back">
+              <div><a href="game.html"><img src="https://photonclasses.com/wp-content/uploads/2021/06/IIT-JEE-and-NEET-Preparatio.png"alt="google"width="200px"></div>
+            </div>
+          </div>
+          
+          
+          <div class="card1">
+              <div class="card1-front">
+                  <div><a href="courses.html"><img src="https://cdn.pixabay.com/photo/2020/11/10/19/14/student-5730767_1280.png"alt="google"width ="300px"> </div>
+                
+              </div>
+             
+          
+              <div class="card1-back">
+                <div><a href="courses.html"><img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/99db94f5-4539-4208-b6c9-34ea66383a41.png"alt="google"width ="200px"></div>
+              </div>
+            </div>
+            <a href="science.html"><img src="://cdn.pixabay.com/photo/2020/11/10/19/14/student-5730767_1280.png"alt="sumit"width="400"></a>
+            
+          
+              
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+     $(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 0, // Set margin to 0 to remove the space between slides
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 800,
+  });
+});
+
+      </script>
+         7
+      <head>
+       <title>Contact Us</title>
+      </head>
+      <body>
+        <h1>Contact Us</h1>
+        <p>SUMIT'S Educational Services Limited</p>
+        <p>Registered office Address:</p>
+        <p>Rajender nagar, back side of factory,</p>
+        <p>Opposite kalyan nagar, DELHI</p>
+        <p>CIN: U80300KA2007PLC150057</p>
+        <p>Telephone: +91-7983884184</p>
+        <p>Fax: +91-9548219893</p>
+      <p>Email: <a href="sumitkumar9548@email.com">email.com</a></p>
+      </body>
+    </html>
+  </head>
+ 

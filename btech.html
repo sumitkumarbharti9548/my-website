@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTech Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BTech Courses</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Computer Science Engineering</h2>
+           
+            <button onclick="enrollCourse('Computer Science Engineering')">Enroll Now</button>
+        </section>
+        <style>
+            body{
+                background-color: cornflowerblue;
+            }
+            section{
+                text-align: center;
+                -webkit-text-fill-color: aquamarine;
+                
+            }
+            header{text-align: center;
+                text-decoration: underline;}
+            p{
+                text-align: center;
+            }
+        </style>
+        <section>
+            <h2>Mechanical Engineering</h2>
+            <p>Description of the Mechanical Engineering course.</p>
+            <button onclick="enrollCourse('Mechanical Engineering')">Enroll Now</button>
+        </section>
+        <section>
+            <h2>Electrical Engineering</h2>
+            <p> </p>
+            <button onclick="enrollCourse('Electrical Engineering')">Enroll Now</button>
+        </section>
+        <!-- Add more BTech courses as needed -->
+    </main>
+    <h1>PDF Material</h1>
+    <p>Here is the PDF material:</p>
+    <!-- Using <embed> tag -->
+    <button><a href="https://ncert.nic.in/textbook/pdf/lhmh1dd.zip"src="https://ncert.nic.in/textbook/pdf/lhmh1dd.zip"type="application/pdf" width="100%" height="600px" onclick="slecetproduct('sinin.html')">download </a> </button> 
+    <footer>
+        <p>&copy; 2024 My Educational Website</p>
+    </footer>
+
+    <script>
+        function enrollCourse(courseName) {
+            alert("You have enrolled in the " + courseName + " course.");
+            // You can perform further actions here, such as redirecting to another page or processing the enrollment
+        }
+    </script>
+</body>
+</html>
